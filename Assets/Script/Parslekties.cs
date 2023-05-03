@@ -6,7 +6,7 @@ public class Parslekties : MonoBehaviour {
 
     public void uzSakumu()
     {
-        SceneManager.LoadScene("Charecter", LoadSceneMode.Single);
+        SceneManager.LoadScene("Start", LoadSceneMode.Single);
 
     }
     public void Atpakal()
@@ -15,7 +15,7 @@ public class Parslekties : MonoBehaviour {
     }
     public void uzUI()
     {
-        SceneManager.LoadScene("Makarovs_UnityUI", LoadSceneMode.Single);
+        SceneManager.LoadScene("Charecter", LoadSceneMode.Single);
 
     }
 }
