@@ -10,15 +10,17 @@ public class Ievade : MonoBehaviour {
 	public GameObject IevadesLauksVecums;
 	public GameObject TekstaAttelosana;
 
-	int indekss;
 	public void UzglabaTekstu()
 	{
 		
 		teksts = IevadesLauks.GetComponent<InputField>().text;
 		int.TryParse(IevadesLauksVecums.GetComponent<InputField>().text, out Vecums);
 		TekstaAttelosana.GetComponent<Text>().text = "Spélétájs " + teksts + " Ir " + Vecums.ToString() + " Gadus Vecs!";
-
+		Info.vards += teksts;
+		Info.vecums += Vecums;
 
 	}
+
+		
 
 }
