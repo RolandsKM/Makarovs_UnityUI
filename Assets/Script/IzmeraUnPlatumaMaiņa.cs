@@ -6,11 +6,17 @@ public class IzmeraUnPlatumaMaiņa : MonoBehaviour {
 	public GameObject mainigaisAttels;
 	public GameObject MainigasiG;
 	public GameObject sliderisIzmes;
+	public GameObject sliderisAugstums;
 	public Sprite[] AtteluMasivs;
 	public void mainitlielumu()
 	{
 		float pasreizejaVertiba = sliderisIzmes.GetComponent<Slider>().value;
-		mainigaisAttels.transform.localScale = new Vector2(1f*pasreizejaVertiba, 1f*pasreizejaVertiba);
+		mainigaisAttels.transform.localScale = new Vector2(1f*pasreizejaVertiba, 1f);
+	}
+	public void mainitAukstumu()
+	{
+		float pasreizejaVertiba = sliderisAugstums.GetComponent<Slider>().value;
+		mainigaisAttels.transform.localScale = new Vector2(1f, 1f*pasreizejaVertiba);
 	}
 
 
